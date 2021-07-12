@@ -1,0 +1,38 @@
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+
+<body>
+  <%- include("./partials/nav.ejs") %>
+
+  <div class="create-Student content">
+    <form action="/student" method="POST" id="add-student">
+      <label for="name">Full name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="studentId">ID:</label>
+      <input type="text" id="studentId" name="studentId" required>
+      <label for="courseName">Course name:</label>
+      <input type="text" id="courseName1" name="courseName1" >
+      <label for="grade">Course grade:</label>
+      <input type="number" id="grade1" name="grade1" ></input>
+      <label for="courseName">Course name:</label>
+      <input type="text" id="courseName2" name="courseName2" >
+      <label for="grade">Course grade:</label>
+      <input type="number" id="grade2" name="grade2" ></input>
+      <label for="courseName">Course name:</label>
+      <input type="text" id="courseName3" name="courseName3" >
+      <label for="grade">Course grade:</label>
+      <input type="number" id="grade3" name="grade3" ></input>
+      <label for="courseName">Course name:</label>
+      <input type="text" id="courseName4" name="courseName4" >
+      <label for="grade">Course grade:</label>
+      <input type="number" id="grade4" name="grade4" ></input>
+      <label for="courseName">Course name:</label>
+      <input type="text" id="courseName5" name="courseName5" >
+      <label for="grade">Course grade:</label>
+      <input type="number" id="grade5" name="grade5" ></input>
+      <button>Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>

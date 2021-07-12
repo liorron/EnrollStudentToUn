@@ -1,0 +1,19 @@
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+
+<body>
+  <%- include("./partials/nav.ejs") %>
+
+  <div class="create-Student content">
+    <form>
+        <label for="courseName">Course name:</label>
+        <input type="text" id="courseName1" name="courseName1" >
+        <label for="grade">Course grade:</label>
+        <input type="number" id="grade1" name="grade1" ></input>
+        <button action="/student/<%= student._id %>" method="POST">Add more grades</button>
+        <button action="/student %>" method="GET">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>

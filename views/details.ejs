@@ -1,0 +1,17 @@
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+
+<body>
+  <%- include("./partials/nav.ejs") %>
+
+  <div class="details content">
+    <h2><%= university.name %></h2>
+    <div class="content">
+      <p>The maximum number of student is:<%= university.maxNumOfStudent %></p>
+      <p>The minimun GPA is:<%= university.minGPA %></p>
+      <p>The current number of student is:<%= university.currentNumOfStudent %></p>
+    </div>
+  </div>
+
+</body>
+</html>

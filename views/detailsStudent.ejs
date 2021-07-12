@@ -1,0 +1,23 @@
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+
+<body>
+  <%- include("./partials/nav.ejs") %>
+
+  <div class="University content">
+    <h2>Here you can see all the student in the university.</h2>
+    <br>
+    <% if (student.length > 0) { %>
+      <% student.forEach(student => { %>
+     
+          <h3 class="title">Student name:<%= student.name %></h3>
+          <h3 class="title">Student ID:<%= student.studentId %></h3>
+      <% }) %>
+    <% } else { %>
+      <p>There are no universities to display...</p>
+    <% } %>
+    
+  </div>
+
+</body>
+</html>

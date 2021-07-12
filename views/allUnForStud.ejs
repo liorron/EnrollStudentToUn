@@ -1,0 +1,22 @@
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+
+<body>
+  <%- include("./partials/nav.ejs") %>
+
+  <div class="University content">
+    <h2>To view the enrolled students, Click on one of the universities in the list.</h2>
+    <% if (university.length > 0) { %>
+      <% university.forEach(university => { %>
+        <a class="single" href="/universityAllStudent/<%= university._id %>">
+          <h3 class="title"><%= university.name %></h3>
+        </a>
+      <% }) %>
+    <% } else { %>
+      <p>There are no universities to display...</p>
+    <% } %>
+    
+  </div>
+
+</body>
+</html>

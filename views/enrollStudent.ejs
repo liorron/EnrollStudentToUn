@@ -1,0 +1,20 @@
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+
+<body>
+    
+  <%- include("./partials/nav.ejs") %>
+ 
+  <h1> Enter the ID of the student you want to enroll to <%= university.name %> </h1>
+  <div class="create-Student content">
+   
+    <form action="/universityEnroll/<%= university._id %>" method="POST">
+       
+      <label for="id">ID of the student:</label>
+      <input type="id" id="id" name="id" required>
+      <button>Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>
